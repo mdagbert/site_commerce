@@ -1,19 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A propos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cizo de Qualit'eh - Vante de Siseaux</title>
+  <link rel="stylesheet" href="styles/template.css">
 </head>
 <body>
-    <header>
+    <div class="navbar">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="boutique.html">Boutique</a></li>
+          <li><a href="a_propos.html">A propos</a></li>
+          <li><a href="panier.html">Panier</a></li>
+        </ul>
+      </div>
+    <div class="content">
+        <div id="vertical-line" style="left:42px;"></div>
+        <section>
+            <h1>Histouare du proget</h1>
+            <div class="vircle">
+                <div style="transform: scale(1);"></div>
+            </div>
+        </section>
 
-    </header>
-    
-    <section>
-        <h1>Histoire du projet</h1>
-    </section>
-    
+        <section>
+            <h1>Formulère de contact</h1>
+            <form>
+                <fieldset>
+                    <label for="nom">Nom</label>
+                    <input id="nom" type="text" placeholder="Entrez votre nom"><br><br>
+                    <label for="prenom">Prénom</label>
+                    <input id="prenom" type="text" placeholder="Entrez votre prénom"><br><br>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="nom.prenom@exemple.xyz"><br><br>
+                    <label for="recommandations">Remarques ou demandes</label><br>
+                    <input id="recommandations" type="textarea" size="50" placeholder="Si vous avez des recommandations ou des demandes et désirez nous contacter"><br><br>
+                    <button id="valider">Valider</button>
+                </fieldset>
+            </form>
+        </section>
+    </div>
 
+    <footer class="footer">
+        <p>&copy; 2024 Cizo de Qualit'eh. Tou droits non réservés.</p>
+    </footer>
 </body>
 </html>
