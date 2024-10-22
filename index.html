@@ -19,6 +19,15 @@
     </div>
 
     <div class="content">
+        <div class="countdown-container">
+            <p>-100% sur TOUT avec le code GATEAU</p>
+            <div id="countdown">
+                <div><span id="days">00</span><span>J</span></div>
+                <div><span id="hours">00</span><span>H</span></div>
+                <div><span id="minutes">00</span><span>M</span></div>
+                <div><span id="seconds">00</span><span>S</span></div>
+            </div>
+        </div>
 
         <section id="a-propos" class="about">
             <h2>À Propos de Nous</h2>
@@ -26,6 +35,25 @@
                 des siseaux de haute qualité aux professionnels et amateurs, garantissant satisfaction et confort. Notre
                 mission est de proposer des produits durables qui aident nos clients à atteindre des résultats parfaits,
                 quelle que soit l'utilisation.</p>
+        </section>
+        <section id="podium" class="podium">
+            <h2>Notre Paux Dium des Produits</h2>
+            <div class="podium-container last-place">
+                <div class="product">
+                    <img src="https://i.servimg.com/u/f87/19/60/88/24/20230248.jpg" alt="Cizo avc un seul tru">
+                    <p>Cizo avc un seul tru</p>
+                </div>
+                <div class="product first-place">
+                    <img src="https://image.darty.com/darty?type=image&source=/market/2023/03/04/21029040_3723_1.jpg&width=269&height=405&quality=95&effects=Pad(CC,FFFFFF)"
+                        alt="Cizo iliktirik">
+                    <p>Cizo iliktirik</p>
+                    <div class="product second-place">
+                        <img src="https://forums.futura-sciences.com/attachments/bricolage-decoration/217326d1367166679-ciseau-bizarre-p1000093.jpg"
+                            alt="Cizo sans lame">
+                        <p>Cizo sans lame</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="avis" class="reviews">
@@ -48,6 +76,26 @@
     <footer class="footer">
         <p>&copy; 2024 Cizo de Qualit'eh. Tou droits non réservés.</p>
     </footer>
+    <script>
+        var countDownDate = new Date().getTime() + 24 * 24 * 60 * 60 * 1000;
+
+        var countdownFunction = setInterval(function () {
+            var now = new Date().getTime();
+
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days < 10 ? '0' + days : days;
+            document.getElementById("hours").innerHTML = hours < 10 ? '0' + hours : hours;
+            document.getElementById("minutes").innerHTML = minutes < 10 ? '0' + minutes : minutes;
+            document.getElementById("seconds").innerHTML = seconds < 10 ? '0' + seconds : seconds;
+        }, 1000);
+    </script>
+
 </body>
 
 </html>
