@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier</title>
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="panier.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+          <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#boutique">Boutique</a></li>
+            <li><a href="#a-propos">A propos</a></li>
+            <li><a href="#panier" class="current-page">Panier</a></li>
+              <a href="index.html"></a>
+              <img src=image/logo.png a alt="logo de du site " id="logo">
+          </ul>
+        </div>
+      </header>
+    <h1>Mon Panier</h1>
+    <div id="mon_panier">
+        <div class="mon_panier">
+            <table>
+                <thead>
+                    <tr>
+                        <th>N°</th>
+                        <th>Nom du produit</th>
+                        <th>Prix Unitaire</th>
+                        <th>Quantité</th>
+                        <th>Prix total</th>
+                        <th>Date de livraison</th>
+                        <th>Opération</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Cizo avec un seul trou <img src=image/un_seul_trou.png alt= " " id="un_seul_trou"></td>
+                        <td class="prix">5.69€</td>
+                        <td><input type="number" min="1" value="1" class="qte"></td>
+                        <td class="total"></td>
+                        <td>04/11/2024</td>
+                        <td>
+                           <button onclick="calculateLineTotal(this)">Calculer</button> 
+                            <!-- <button onclick="resetLineTotal(this)">Réinitialiser</button> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Cizo sans lame <img src=image/sans_lame.png alt= " " id="sans_lame"></td>
+                        <td class="prix">5.00€</td>
+                        <td><input type="number" min="1" value="1" class="qte"></td>
+                        <td class="total"></td>
+                        <td>04/11/2024</td>
+                        <td>
+                             <button onclick="calculateLineTotal(this)">Calculer</button>
+                            <!-- <button onclick="resetLineTotal(this)">Réinitialiser</button> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Cizo iliktrik <img src=image/illiktrik.png alt= " " id="illiktrik"></td>
+                        <td class="prix">1.000.000€</td>
+                        <td><input type="number" min="1" value="1" class="qte"></td>
+                        <td class="total"></td>
+                        <td>04/11/2024</td>
+                        <td>
+                            <button onclick="calculateLineTotal(this)">Calculer</button>
+                            <!-- <button onclick="resetLineTotal(this)">Réinitialiser</button> -->
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="4">Total:</th>
+                        <th id="totalGeneral">0.00</th>
+                        <th colspan="2">
+                            Merci pour votre commande
+                            <button onclick="resetAll()">Réinitialiser tout</button>
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            
+            <button>
+                <span>Valider ma commande</span>
+            </button>
+
+        </div>
+
+</body>
+</html>
