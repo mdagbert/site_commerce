@@ -1,77 +1,98 @@
 button {
     display: inline-block;
-    background-color: #38d8d5;
+    background-color: #3898d8;
     border-radius: 20px;
     border: 2px double #cccccc;
     color: #eeeeee;
     text-align: center;
     vertical-align: center;
     font-size: 20px;
-    font-family: Arial,sans-serif;
+    font-family: Arial, sans-serif;
     padding: 15px;
-    width:200;
+    width: 200;
     transition: all 0.5s;
     cursor: pointer;
     text-align: top;
-    margin:10px;
+    margin: 10px;
+}
 
-    
-    }
-    button span {
+button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
-    }
-    button span:after {
+}
+
+button span:after {
     content: "\00bb";
     position: absolute;
     opacity: 0;
     top: 5;
     right: -20px;
     transition: 0.5s;
-    }
-    button:hover {
+}
+
+button:hover {
     background-color: #ddc2f9;
-    }
-    button:hover span {
+}
+
+button:hover span {
     padding-right: 15px;
-    }
-    button:hover span:after {
+}
+
+button:hover span:after {
     opacity: 1;
     right: 0;
-    }
+}
 
-    table{
-        border-collapse:collapse;
-        margin:auto;
-        
-    }
-    td,th{
-        border: 1px solid rgb(13, 3, 28);
-        padding: 10px;
-        height:5px;
-        width:15px;
-    }
+table {
+    border-collapse: collapse;
+    margin: auto;
+    border-radius: 10px 30px 0px 90px;
 
-    h1{
-        background-color:auto;
-        color: #102f8b;
-    }
+}
 
-    #logo{
-        height: 20px;
-        width: 20px;
-    }
-#un_seul_trou{
-        height:50px;
-        width: 80px;
-    }
-    #sans_lame{
-        height:50px;
-        width: 80px;
-    }
-    #illiktrik{
-        height:50px;
-        width: 80px;
-    }
+td, th {
+    border: 1px solid rgb(13, 3, 28);
+    padding: 10px;
+    height: 5px;
+    width: 15px;
+}
+
+h1 {
+    background-color: rgb(0, 140, 255);
+    color: #102f8b;
+    font-family: Arial, sans-serif;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 25px 5px 5px 10px 25px;
+    
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+    position:relative;
+    top:6px;
+    left:400px;
+   
+}
+
+#un_seul_trou {
+    height: 50px;
+    width: 80px;
+}
+
+#sans_lame {
+    height: 50px;
+    width: 80px;
+}
+
+#illiktrik {
+    height: 50px;
+    width: 80px;
+}
+
+body {
+    background-color: gainsboro;
+}
